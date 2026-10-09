@@ -14,6 +14,7 @@ import { CoverageMapSection } from "@/components/site/CoverageMapSection";
 import { ServicesSection } from "@/components/site/ServicesSection";
 import { FAQSection } from "@/components/site/FAQSection";
 import { ContactSection } from "@/components/site/ContactSection";
+import { InterventionsGallery } from "@/components/site/InterventionsGallery";
 import { BASE, PHONE, TEL, WA, zones } from "@/lib/site-data";
 
 
@@ -175,7 +176,7 @@ function Index() {
       <ServicesSection />
 
 
-
+      <InterventionsGallery />
 
 
       {/* Hartă acoperire */}
