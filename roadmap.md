@@ -6,3 +6,4 @@
 - [x] WhatsApp: etichetă simplă, fără număr (păstrat)
 - [x] „Sună acum" doar în bara fixă de jos; numărul revine vizibil în restul site-ului
 - [x] Bară fixă de jos afișată dublu (Footer + MobileActionBar) — eliminat duplicatul
+- [x] Locație Google Maps, adresă și punct de bază actualizate după profilul trimis

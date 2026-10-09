@@ -14,7 +14,7 @@ import { CoverageMapSection } from "@/components/site/CoverageMapSection";
 import { ServicesSection } from "@/components/site/ServicesSection";
 import { FAQSection } from "@/components/site/FAQSection";
 import { ContactSection } from "@/components/site/ContactSection";
-import { PHONE, TEL, WA, zones } from "@/lib/site-data";
+import { BASE, PHONE, TEL, WA, zones } from "@/lib/site-data";
 
 
 export const Route = createFileRoute("/")({
@@ -48,9 +48,15 @@ export const Route = createFileRoute("/")({
           url: "https://sa123.lovable.app/",
           address: {
             "@type": "PostalAddress",
-            streetAddress: "Șoseaua Mangaliei 126 B",
+            streetAddress: "Strada Răsăritului 7",
             addressLocality: "Constanța",
+            postalCode: "900388",
             addressCountry: "RO",
+          },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: BASE[0],
+            longitude: BASE[1],
           },
           openingHours: "Mo-Su 00:00-23:59",
           areaServed: zones.map((z) => z.name),
