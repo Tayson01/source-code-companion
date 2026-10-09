@@ -1,4 +1,5 @@
 import logo from "@/assets/autorun-logo.png.asset.json";
+import logoDark from "@/assets/autorun-logo-dark.png.asset.json";
 import { Link } from "@tanstack/react-router";
 import { Phone, MessageCircle, MapPin } from "lucide-react";
 
@@ -10,7 +11,7 @@ export function Footer() {
       <footer className="border-t border-border bg-surface">
         <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <Link to="/" aria-label="Vulcanizare Autorun"><img src={logo.url} alt="Vulcanizare Autorun" width={1060} height={260} className="h-auto w-56 dark:rounded dark:bg-white dark:p-2" /></Link>
+            <Link to="/" aria-label="Vulcanizare Autorun"><img src={logo.url} alt="Vulcanizare Autorun" width={1060} height={260} className="h-auto w-56 dark:hidden" /><img src={logoDark.url} alt="Vulcanizare Autorun" width={1060} height={260} className="h-auto w-56 hidden dark:block" /></Link>
             <p className="mt-3 text-sm text-muted-foreground">
               Servicii mobile de vulcanizare în Constanța și pe litoral, disponibili 24/7.
             </p>
