@@ -2,7 +2,7 @@ import { Clock, MapPin, MessageCircle, Phone, ShieldCheck, Navigation } from "lu
 
 import { SectionLabel } from "@/components/site/ui";
 import { ContactForm } from "@/components/site/ContactForm";
-import { ADDRESS, MAPS, PHONE, TEL, WA } from "@/lib/site-data";
+import { ADDRESS, MAPS, TEL, WA } from "@/lib/site-data";
 
 const trust = [
   { icon: Clock, text: "Non-stop, inclusiv weekend și sărbători" },
@@ -36,22 +36,16 @@ export function ContactSection() {
 
             <a
               href={`tel:${TEL}`}
-              className="mt-3 block text-[2.35rem] font-black leading-none tracking-tight tabular-nums transition-opacity active:opacity-80 sm:text-5xl"
+              className="vm-callfx vm-callbtn mt-4 inline-flex min-h-16 w-full items-center justify-center gap-3 rounded-2xl bg-brand-foreground px-6 text-2xl font-black tracking-tight text-brand transition-transform active:scale-[0.98] sm:text-3xl"
             >
-              {PHONE}
+              <Phone className="size-6" /> <span>Sună acum</span>
             </a>
             <p className="mt-2 text-[13px] text-brand-foreground/80">
               Răspundem în mai puțin de un minut.
             </p>
 
             {/* Butoane mari, full-width pe mobil */}
-            <div className="mt-5 grid gap-2.5 sm:grid-cols-2">
-              <a
-                href={`tel:${TEL}`}
-                className="vm-callbtn inline-flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-brand-foreground px-6 text-base font-extrabold text-brand transition-transform active:scale-[0.98]"
-              >
-                <Phone className="size-5" /> Sună acum
-              </a>
+            <div className="mt-3 grid gap-2.5">
               <a
                 href={WA}
                 target="_blank"

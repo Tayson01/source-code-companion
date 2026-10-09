@@ -117,8 +117,8 @@ function ZonePage() {
             Trimite-ne detaliile pe WhatsApp, opțional cu locația exactă, sau sună direct.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Btn href={`tel:${TEL}`}>
-              <Phone className="size-4" /> {PHONE}
+            <Btn href={`tel:${TEL}`} className="vm-callfx vm-callcta">
+              <Phone className="size-4" /> <span>Sună acum</span>
             </Btn>
             <Btn href={WA} variant="ghost">
               WhatsApp

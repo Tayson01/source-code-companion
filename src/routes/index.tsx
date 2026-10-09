@@ -14,7 +14,7 @@ import { CoverageMapSection } from "@/components/site/CoverageMapSection";
 import { ServicesSection } from "@/components/site/ServicesSection";
 import { FAQSection } from "@/components/site/FAQSection";
 import { ContactSection } from "@/components/site/ContactSection";
-import { PHONE, TEL, WA, zones } from "@/lib/site-data";
+import { TEL, WA, zones } from "@/lib/site-data";
 
 
 export const Route = createFileRoute("/")({
@@ -92,8 +92,8 @@ function Index() {
               </p>
 
               <div className="mt-5 grid gap-2.5 sm:mt-8 sm:flex sm:flex-wrap sm:gap-3">
-                <Btn href={`tel:${TEL}`} className="min-h-14 w-full text-base shadow-glow sm:min-h-0 sm:w-auto sm:text-sm">
-                  <Phone className="size-5 sm:size-4" /> Sună: {PHONE}
+                <Btn href={`tel:${TEL}`} className="vm-callfx vm-callcta min-h-14 w-full text-base font-bold shadow-glow sm:min-h-0 sm:w-auto sm:text-sm">
+                  <Phone className="size-5 sm:size-4" /> <span>Sună acum</span>
                 </Btn>
                 <div className="grid grid-cols-2 gap-2.5 sm:contents">
                   <Btn href={WA} variant="ghost" className="min-h-13 px-3 sm:min-h-0 sm:px-5">
@@ -138,8 +138,8 @@ function Index() {
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
-              <Btn href={`tel:${TEL}`}>
-                <Phone className="size-4" /> {PHONE}
+              <Btn href={`tel:${TEL}`} className="vm-callfx vm-callcta">
+                <Phone className="size-4" /> <span>Sună acum</span>
               </Btn>
               <Btn href={WA} variant="ghost">
                 <MessageCircle className="size-4" /> WhatsApp
