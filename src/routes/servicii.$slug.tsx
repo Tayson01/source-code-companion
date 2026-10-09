@@ -15,7 +15,7 @@ export const Route = createFileRoute("/servicii/$slug")({
     const s = loaderData?.service;
     const title = s ? `${s.title} în Constanța — Vulcanizare Autorun` : "Serviciu — Vulcanizare Autorun";
     const description = s
-      ? `${s.desc} Tarif: ${s.price}, durată ${s.duration}. Sună la ${PHONE}.`
+      ? `${s.desc} Preț la telefon, durată ${s.duration}. Sună la ${PHONE}.`
       : "Servicii mobile de vulcanizare în Constanța.";
     return {
       meta: [
@@ -26,6 +26,7 @@ export const Route = createFileRoute("/servicii/$slug")({
         { property: "og:type", content: "article" },
         { name: "twitter:card", content: "summary_large_image" },
       ],
+      links: [{ rel: "canonical", href: `/servicii/${s?.slug ?? ""}` }],
     };
   },
   component: ServicePage,
