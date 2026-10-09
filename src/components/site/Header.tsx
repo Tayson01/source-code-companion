@@ -67,7 +67,7 @@ export function Header() {
             className="vm-callfx vm-callcta inline-flex min-h-11 items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-brand px-3.5 text-sm font-bold text-brand-foreground transition-all hover:brightness-110 active:scale-95 sm:px-4"
           >
             <Phone className="size-4 shrink-0" />
-            <span className="hidden tabular-nums sm:inline">{PHONE}</span>
+                <span className="hidden tabular-nums min-[340px]:inline">{PHONE}</span>
             <span className="sr-only sm:hidden">Sună</span>
           </a>
           <button
