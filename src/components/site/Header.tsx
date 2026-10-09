@@ -41,7 +41,7 @@ export function Header() {
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-2 px-4 sm:px-5">
         <Link to="/" className="flex min-w-0 items-center gap-2">
-          <img src={logo.url} alt="Vulcanizare Autorun" width={1060} height={260} className="h-auto w-40 sm:w-52" />
+          <img src={logo.url} alt="Vulcanizare Autorun" width={1060} height={260} className="h-auto w-40 sm:w-52 dark:rounded dark:bg-white dark:p-1" />
         </Link>
 
         <nav className="hidden items-center gap-7 text-sm font-medium text-muted-foreground lg:flex">
