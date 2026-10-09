@@ -1,27 +1,27 @@
 import { Camera, ExternalLink, Quote, Star } from "lucide-react";
 
-import photo02 from "@/assets/gallery/interventie-02.jpg.asset.json";
-import photo03 from "@/assets/gallery/interventie-03.jpg.asset.json";
-import photo04 from "@/assets/gallery/interventie-04.jpg.asset.json";
-import photo05 from "@/assets/gallery/interventie-05.jpg.asset.json";
-import photo06 from "@/assets/gallery/interventie-06.jpg.asset.json";
-import photo07 from "@/assets/gallery/interventie-07.jpg.asset.json";
-import photo08 from "@/assets/gallery/interventie-08.jpg.asset.json";
-import photo09 from "@/assets/gallery/interventie-09.jpg.asset.json";
-import photo10 from "@/assets/gallery/interventie-10.jpg.asset.json";
+import photo02 from "@/assets/gallery/interventie-02.jpg";
+import photo03 from "@/assets/gallery/interventie-03.jpg";
+import photo04 from "@/assets/gallery/interventie-04.jpg";
+import photo05 from "@/assets/gallery/interventie-05.jpg";
+import photo06 from "@/assets/gallery/interventie-06.jpg";
+import photo07 from "@/assets/gallery/interventie-07.jpg";
+import photo08 from "@/assets/gallery/interventie-08.jpg";
+import photo09 from "@/assets/gallery/interventie-09.jpg";
+import photo10 from "@/assets/gallery/interventie-10.jpg";
 import { MAPS } from "@/lib/site-data";
 import { SectionLabel } from "@/components/site/ui";
 
 const photos = [
-  { src: photo02.url, alt: "Schimb de roată efectuat la client" },
-  { src: photo03.url, alt: "Intervenție Autorun la un autoturism albastru" },
-  { src: photo04.url, alt: "Intervenție de vulcanizare la o dubă" },
-  { src: photo05.url, alt: "Duba Autorun la o intervenție de noapte" },
-  { src: photo06.url, alt: "Schimb de roată în parcarea clientului" },
-  { src: photo07.url, alt: "Intervenție de vulcanizare pe autostradă" },
-  { src: photo08.url, alt: "Reparație de roată direct în oraș" },
-  { src: photo09.url, alt: "Asistență auto pentru pornirea unei mașini" },
-  { src: photo10.url, alt: "Reparație auto efectuată la locația clientului" },
+  { src: photo02, alt: "Schimb de roată efectuat la client" },
+  { src: photo03, alt: "Intervenție Autorun la un autoturism albastru" },
+  { src: photo04, alt: "Intervenție de vulcanizare la o dubă" },
+  { src: photo05, alt: "Duba Autorun la o intervenție de noapte" },
+  { src: photo06, alt: "Schimb de roată în parcarea clientului" },
+  { src: photo07, alt: "Intervenție de vulcanizare pe autostradă" },
+  { src: photo08, alt: "Reparație de roată direct în oraș" },
+  { src: photo09, alt: "Asistență auto pentru pornirea unei mașini" },
+  { src: photo10, alt: "Reparație auto efectuată la locația clientului" },
 ];
 
 const reviews = [

@@ -8,8 +8,8 @@ import {
 } from "lucide-react";
 
 import { Btn, BtnLink } from "@/components/site/ui";
-import serviceVan from "@/assets/autorun-branded-van.webp.asset.json";
-import serviceVanMobile from "@/assets/autorun-branded-van-mobile.webp.asset.json";
+import serviceVan from "@/assets/autorun-branded-van.webp";
+import serviceVanMobile from "@/assets/autorun-branded-van-mobile.webp";
 import { CoverageMapSection } from "@/components/site/CoverageMapSection";
 import { ServicesSection } from "@/components/site/ServicesSection";
 import { FAQSection } from "@/components/site/FAQSection";
@@ -75,8 +75,8 @@ function Index() {
       {/* Hero */}
       <section id="top" className="relative overflow-hidden">
         <picture>
-          <source media="(max-width: 767px)" srcSet={serviceVanMobile.url} />
-<img src={serviceVan.url} alt="Dubă de vulcanizare mobilă cu inscripțiile Autorun și numărul 0725 471 288" width={1537} height={1023} className="absolute inset-x-0 top-0 h-[15rem] w-full object-cover object-center sm:h-80 sm:object-right md:inset-0 md:h-full" fetchPriority="high" />
+          <source media="(max-width: 767px)" srcSet={serviceVanMobile} />
+<img src={serviceVan} alt="Dubă de vulcanizare mobilă cu inscripțiile Autorun și numărul 0725 471 288" width={1537} height={1023} className="absolute inset-x-0 top-0 h-[15rem] w-full object-cover object-center sm:h-80 sm:object-right md:inset-0 md:h-full" fetchPriority="high" />
         </picture>
         <div className="autorun-hero-shade absolute inset-x-0 top-0 h-[15rem] sm:h-80 md:inset-0 md:h-full" aria-hidden="true" />
         <div className="relative mx-auto max-w-6xl px-5 pb-7 pt-[15.5rem] sm:pt-80 md:pb-14 md:pt-16">
