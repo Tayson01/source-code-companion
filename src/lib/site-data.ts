@@ -3,11 +3,10 @@ export const TEL = "+40725471288";
 export const WA_NUMBER = "40725471288";
 export const WA =
   "https://wa.me/40725471288?text=Bun%C4%83%20ziua!%20Am%20nevoie%20de%20vulcanizare%20mobil%C4%83%20%C3%AEn%20Constan%C8%9Ba.";
-export const REVIEWS = "https://maps.app.goo.gl/TWmDYyph7UUA6BAx6";
-export const MAPS =
-  "https://www.google.com/maps/search/?api=1&query=%C8%98oseaua%20Mangaliei%20126%20B%2C%20Constan%C8%9Ba";
+export const MAPS = "https://maps.app.goo.gl/JXPdubgGGMryF39f7";
+export const REVIEWS = MAPS;
 
-export const BASE: [number, number] = [44.1598, 28.6348];
+export const BASE: [number, number] = [44.192542, 28.630099];
 
 export type Service = {
   slug: string;
@@ -211,7 +210,7 @@ export const zones: Zone[] = [
     coords: [44.1733, 28.6383],
     desc: "Tot orașul, inclusiv Tomis Nord, Faleză, Km 4-5 și zona port.",
     intro:
-      "Baza noastră este pe Șoseaua Mangaliei 126 B, așa că acoperim tot orașul rapid: Tomis Nord, Tomis III, Faleză Nord, Km 4-5, Coiciu, Palas, Inel II și zona Portului.",
+      "Baza noastră este pe Strada Răsăritului 7, așa că acoperim tot orașul rapid: Tomis Nord, Tomis III, Faleză Nord, Km 4-5, Coiciu, Palas, Inel II și zona Portului.",
     roads: ["Bd. Mamaia", "Bd. Aurel Vlaicu", "Șos. Mangaliei", "Bd. 1 Mai", "Centura Constanța"],
     localities: ["Tomis Nord", "Faleză Nord", "Km 4-5", "Coiciu", "Palas", "Zona Port"],
   },
@@ -293,7 +292,7 @@ export function waLink(text: string) {
 }
 
 export const EMAIL = "contact@vulcanizaremobilaconstanta.ro";
-export const ADDRESS = "Șos. Mangaliei 126 B, Constanța";
+export const ADDRESS = "Strada Răsăritului 7, Constanța";
 
 export const stats = [
   { value: "15 min", label: "Timp mediu de răspuns în oraș" },

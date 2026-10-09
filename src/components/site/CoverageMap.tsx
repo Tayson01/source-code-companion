@@ -31,7 +31,7 @@ import {
   X,
 } from "lucide-react";
 
-import { BASE, TEL, mapRings, waLink, zones } from "@/lib/site-data";
+import { ADDRESS, BASE, MAPS, TEL, mapRings, waLink, zones } from "@/lib/site-data";
 
 type LatLngTuple = [number, number];
 
@@ -490,7 +490,7 @@ export default function CoverageMap() {
 
           <Marker position={BASE} icon={baseIcon} zIndexOffset={1000}>
             <Tooltip direction="top" offset={[0, -12]} className="vm-tip vm-tip-strong">
-              Bază · Șos. Mangaliei 126 B
+              Bază · {ADDRESS}
             </Tooltip>
           </Marker>
 
@@ -801,6 +801,14 @@ export default function CoverageMap() {
                   </button>
                   <a href={`tel:${TEL}`} className="vm-act vm-act-ghost">
                     <Phone className="size-4" /> Sună
+                  </a>
+                  <a
+                    href={MAPS}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="vm-act vm-act-ghost col-span-2"
+                  >
+                    <Navigation className="size-4" /> Deschide locația în Google Maps
                   </a>
                 </div>
               )}

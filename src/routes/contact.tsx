@@ -12,7 +12,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Sună la 0725 471 288 sau trimite locația pe WhatsApp. Vulcanizare mobilă în Constanța, disponibili 24/7, Șos. Mangaliei 126 B.",
+          "Sună la 0725 471 288 sau trimite locația pe WhatsApp. Vulcanizare mobilă în Constanța, disponibili 24/7, Strada Răsăritului 7.",
       },
       { property: "og:title", content: "Contact — Vulcanizare Autorun" },
       {
