@@ -1,4 +1,4 @@
-import { Camera, ExternalLink } from "lucide-react";
+import { Camera, ExternalLink, Quote, Star } from "lucide-react";
 
 import photo02 from "@/assets/gallery/interventie-02.jpg.asset.json";
 import photo03 from "@/assets/gallery/interventie-03.jpg.asset.json";
@@ -22,6 +22,21 @@ const photos = [
   { src: photo08.url, alt: "Reparație de roată direct în oraș" },
   { src: photo09.url, alt: "Asistență auto pentru pornirea unei mașini" },
   { src: photo10.url, alt: "Reparație auto efectuată la locația clientului" },
+];
+
+const reviews = [
+  {
+    text: "Servicii de calitate. Recomand cu încredere!",
+    date: "19 martie 2026",
+  },
+  {
+    text: "Am avut un prezon stricat și m-au rezolvat în mijlocul drumului. Mulțumesc și recomand cu încredere!",
+    date: "2 ianuarie 2026",
+  },
+  {
+    text: "Super rapid și eficient, calitate. Recomand!",
+    date: "29 decembrie 2025",
+  },
 ];
 
 export function InterventionsGallery() {
@@ -75,6 +90,44 @@ export function InterventionsGallery() {
         <p className="mt-4 text-xs text-muted-foreground">
           Fotografii publicate pe profilul Google Maps Vulcanizare Mobila Constanta.
         </p>
+
+        <div className="mt-10 border-t border-border pt-8 sm:mt-12 sm:pt-10">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <div className="flex items-center gap-2.5">
+                <div className="flex gap-0.5 text-brand" aria-label="5 stele din 5">
+                  {Array.from({ length: 5 }).map((_, index) => (
+                    <Star key={index} className="size-4 fill-current" aria-hidden="true" />
+                  ))}
+                </div>
+                <span className="text-sm font-extrabold">4,9 din 5</span>
+              </div>
+              <h3 className="mt-2 text-xl font-extrabold sm:text-2xl">Spus de clienții noștri</h3>
+              <p className="mt-1 text-sm text-muted-foreground">Recenzii publice de pe Google Maps.</p>
+            </div>
+            <a
+              href={MAPS}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex w-fit items-center gap-1.5 text-sm font-semibold text-brand transition-opacity hover:opacity-75"
+            >
+              Vezi toate recenziile <ExternalLink className="size-3.5" />
+            </a>
+          </div>
+
+          <div className="mt-5 flex snap-x snap-mandatory gap-3 overflow-x-auto pb-2 sm:grid sm:grid-cols-3 sm:overflow-visible sm:pb-0">
+            {reviews.map((review) => (
+              <figure
+                key={review.text}
+                className="min-w-[82%] snap-start rounded-lg border border-border bg-card p-5 shadow-card sm:min-w-0"
+              >
+                <Quote className="size-5 text-brand" aria-hidden="true" />
+                <blockquote className="mt-3 text-sm font-medium leading-relaxed">„{review.text}”</blockquote>
+                <figcaption className="mt-4 text-xs text-muted-foreground">Recenzie Google · {review.date}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
