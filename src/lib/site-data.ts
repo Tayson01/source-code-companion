@@ -44,12 +44,12 @@ export const services: Service[] = [
     desc: "Intervenim non-stop pe A2, A4, DN39 și în tot orașul, indiferent de oră.",
     intro:
       "Rămâi cu pana pe autostradă sau pe drum național? Venim la tine cu duba de intervenție, complet echipată, la orice oră din zi sau din noapte. Nu ai nevoie de platformă și nu trebuie să îți muți mașina.",
-    price: "de la 120 lei",
-    priceFrom: "120 lei",
+    price: "Preț la telefon",
+    priceFrom: "Preț la telefon",
     priceNote: "deplasare inclusă în oraș",
     pricing: [
-      { label: "În Constanța", value: "120 lei", note: "deplasare inclusă" },
-      { label: "A2 / A4 / DN39", value: "150 lei", note: "autostradă & drum național" },
+      { label: "În Constanța", value: "la telefon", note: "deplasare inclusă" },
+      { label: "A2 / A4 / DN39", value: "la telefon", note: "autostradă & drum național" },
       { label: "Camioane & utilitare", value: "personalizat", note: "contracte flote" },
     ],
     duration: "20–40 minute pe loc",
