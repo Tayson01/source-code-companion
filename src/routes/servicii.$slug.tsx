@@ -15,7 +15,7 @@ export const Route = createFileRoute("/servicii/$slug")({
     const s = loaderData?.service;
     const title = s ? `${s.title} în Constanța — Vulcanizare Autorun` : "Serviciu — Vulcanizare Autorun";
     const description = s
-      ? `${s.desc} Preț ${s.price}, durată ${s.duration}. Sună la ${PHONE}.`
+      ? `${s.desc} Tarif: ${s.price}, durată ${s.duration}. Sună la ${PHONE}.`
       : "Servicii mobile de vulcanizare în Constanța.";
     return {
       meta: [
@@ -51,7 +51,7 @@ function ServicePage() {
       <div className="mt-8 grid gap-4 sm:grid-cols-2">
         <div className="rounded-2xl border border-border bg-card p-5">
           <p className="inline-flex items-center gap-2 text-xs font-semibold text-muted-foreground">
-            <Tag className="size-4 text-brand" /> Preț orientativ
+            <Tag className="size-4 text-brand" /> Tarif
           </p>
           <p className="mt-1 text-lg font-bold">{service.price}</p>
         </div>
