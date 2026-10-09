@@ -60,7 +60,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <ThemeToggle />
+          <ThemeToggle className="hidden sm:flex" />
 
           <a
             href={`tel:${TEL}`}
@@ -116,6 +116,10 @@ export function Header() {
               >
                 <MessageCircle className="size-4 text-brand" /> WhatsApp
               </a>
+            </div>
+            <div className="mt-3 flex items-center justify-between rounded-2xl border border-border bg-card px-4 py-3">
+              <span className="text-sm font-semibold text-muted-foreground">Mod întunecat</span>
+              <ThemeToggle />
             </div>
           </nav>
         </div>
