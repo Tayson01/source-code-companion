@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as IntrebariFrecventeRouteImport } from './routes/intrebari-frecvente'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServiciiIndexRouteImport } from './routes/servicii.index'
 import { Route as ServiciiSlugRouteImport } from './routes/servicii.$slug'
 import { Route as ZoneIndexRouteImport } from './routes/zone.index'
@@ -30,6 +31,11 @@ const ContactRoute = ContactRouteImport.update({
 const IntrebariFrecventeRoute = IntrebariFrecventeRouteImport.update({
   id: '/intrebari-frecvente',
   path: '/intrebari-frecvente',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServiciiIndexRoute = ServiciiIndexRouteImport.update({
@@ -57,6 +63,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/intrebari-frecvente': typeof IntrebariFrecventeRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/servicii/$slug': typeof ServiciiSlugRoute
   '/zone/$slug': typeof ZoneSlugRoute
   '/servicii/': typeof ServiciiIndexRoute
@@ -66,6 +73,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/intrebari-frecvente': typeof IntrebariFrecventeRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/servicii/$slug': typeof ServiciiSlugRoute
   '/zone/$slug': typeof ZoneSlugRoute
   '/servicii': typeof ServiciiIndexRoute
@@ -76,6 +84,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/intrebari-frecvente': typeof IntrebariFrecventeRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/servicii/$slug': typeof ServiciiSlugRoute
   '/zone/$slug': typeof ZoneSlugRoute
   '/servicii/': typeof ServiciiIndexRoute
@@ -87,6 +96,7 @@ export interface FileRouteTypes {
     | '/'
     | '/contact'
     | '/intrebari-frecvente'
+    | '/sitemap.xml'
     | '/servicii/$slug'
     | '/zone/$slug'
     | '/servicii/'
@@ -96,6 +106,7 @@ export interface FileRouteTypes {
     | '/'
     | '/contact'
     | '/intrebari-frecvente'
+    | '/sitemap.xml'
     | '/servicii/$slug'
     | '/zone/$slug'
     | '/servicii'
@@ -105,6 +116,7 @@ export interface FileRouteTypes {
     | '/'
     | '/contact'
     | '/intrebari-frecvente'
+    | '/sitemap.xml'
     | '/servicii/$slug'
     | '/zone/$slug'
     | '/servicii/'
@@ -115,6 +127,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContactRoute: typeof ContactRoute
   IntrebariFrecventeRoute: typeof IntrebariFrecventeRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   ServiciiSlugRoute: typeof ServiciiSlugRoute
   ZoneSlugRoute: typeof ZoneSlugRoute
   ServiciiIndexRoute: typeof ServiciiIndexRoute
@@ -142,6 +155,13 @@ declare module '@tanstack/react-router' {
       path: '/intrebari-frecvente'
       fullPath: '/intrebari-frecvente'
       preLoaderRoute: typeof IntrebariFrecventeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/servicii/': {
@@ -179,6 +199,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContactRoute: ContactRoute,
   IntrebariFrecventeRoute: IntrebariFrecventeRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   ServiciiSlugRoute: ServiciiSlugRoute,
   ZoneSlugRoute: ZoneSlugRoute,
   ServiciiIndexRoute: ServiciiIndexRoute,
