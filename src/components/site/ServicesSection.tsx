@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { ArrowRight, Check, Clock, MapPin, Phone, ShieldCheck, Tag, Zap } from "lucide-react";
 
-import { PHONE, TEL, services } from "@/lib/site-data";
+import { TEL, services } from "@/lib/site-data";
 import { ServiceIcon } from "@/components/site/ServiceIcon";
 import { SectionLabel } from "@/components/site/ui";
 import { Link } from "@tanstack/react-router";
