@@ -7,3 +7,4 @@
 - [x] „Sună acum" doar în bara fixă de jos; numărul revine vizibil în restul site-ului
 - [x] Bară fixă de jos afișată dublu (Footer + MobileActionBar) — eliminat duplicatul
 - [x] Locație Google Maps, adresă și punct de bază actualizate după profilul trimis
+- [x] Galerie „Intervenții reale” cu toate fotografiile publice ale profilului Google Maps
