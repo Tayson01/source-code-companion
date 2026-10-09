@@ -118,7 +118,7 @@ function ZonePage() {
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Btn href={`tel:${TEL}`} className="vm-callfx vm-callcta">
-              <Phone className="size-4" /> <span>Sună acum</span>
+              <Phone className="size-4" /> <span className="tabular-nums">{PHONE}</span>
             </Btn>
             <Btn href={WA} variant="ghost">
               WhatsApp

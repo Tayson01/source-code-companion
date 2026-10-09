@@ -97,9 +97,9 @@ function ServicePage() {
         <div className="flex flex-wrap gap-3">
           <a
             href={`tel:${TEL}`}
-            className="vm-callfx vm-callcta inline-flex items-center gap-2 rounded-xl bg-card px-5 py-3 text-sm font-bold text-foreground"
+            className="vm-callfx vm-callcta inline-flex items-center gap-2 whitespace-nowrap rounded-xl bg-card px-5 py-3 text-sm font-bold text-foreground"
           >
-            <Phone className="size-4" /> <span>Sună acum</span>
+            <Phone className="size-4 shrink-0" /> <span className="tabular-nums">{PHONE}</span>
           </a>
           <Btn href={WA} variant="ghost">
             WhatsApp

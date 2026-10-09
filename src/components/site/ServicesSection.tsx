@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { ArrowRight, Check, Clock, MapPin, Phone, ShieldCheck, Tag, Zap } from "lucide-react";
 
-import { TEL, services } from "@/lib/site-data";
+import { PHONE, TEL, services } from "@/lib/site-data";
 import { ServiceIcon } from "@/components/site/ServiceIcon";
 import { SectionLabel } from "@/components/site/ui";
 import { Link } from "@tanstack/react-router";
@@ -128,9 +128,9 @@ export function ServicesSection() {
                   </Link>
                   <a
                     href={`tel:${TEL}`}
-                    className="vm-callfx vm-callcta inline-flex items-center gap-2 rounded-xl border border-border bg-card px-5 py-3 text-sm font-bold transition-colors hover:bg-surface"
+                    className="vm-callfx vm-callcta inline-flex items-center gap-2 whitespace-nowrap rounded-xl border border-border bg-card px-5 py-3 text-sm font-bold transition-colors hover:bg-surface"
                   >
-                    <Phone className="size-4 text-brand" /> <span>Sună acum</span>
+                    <Phone className="size-4 shrink-0 text-brand" /> <span className="tabular-nums">{PHONE}</span>
                   </a>
                 </div>
               </div>

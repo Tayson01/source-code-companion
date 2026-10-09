@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 
 import { Btn, BtnLink, SectionLabel } from "@/components/site/ui";
-import { TEL, WA, faqs } from "@/lib/site-data";
+import { PHONE, TEL, WA, faqs } from "@/lib/site-data";
 
 const categories = [
   { id: "all", label: "Toate" },
@@ -111,7 +111,7 @@ export function FAQSection() {
                 </p>
                 <div className="mt-5 flex justify-center gap-3">
                   <Btn href={`tel:${TEL}`} className="vm-callfx vm-callcta">
-                    <Phone className="size-4" /> <span>Sună acum</span>
+                    <Phone className="size-4" /> <span className="tabular-nums">{PHONE}</span>
                   </Btn>
                   <Btn href={WA} variant="ghost">
                     <MessageCircle className="size-4" /> WhatsApp
@@ -175,7 +175,7 @@ export function FAQSection() {
             </p>
             <div className="mt-5 flex flex-col gap-2.5">
               <Btn href={`tel:${TEL}`} className="vm-callfx vm-callcta w-full">
-                <Phone className="size-4" /> <span>Sună acum</span>
+                <Phone className="size-4" /> <span className="tabular-nums">{PHONE}</span>
               </Btn>
               <Btn href={WA} variant="ghost" className="w-full">
                 <MessageCircle className="size-4" /> WhatsApp

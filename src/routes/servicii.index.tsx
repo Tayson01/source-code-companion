@@ -3,7 +3,7 @@ import { MessageCircle, Phone } from "lucide-react";
 
 import { Btn, BtnLink, SectionLabel } from "@/components/site/ui";
 import { ServiceIcon } from "@/components/site/ServiceIcon";
-import { TEL, WA, services } from "@/lib/site-data";
+import { PHONE, TEL, WA, services } from "@/lib/site-data";
 
 export const Route = createFileRoute("/servicii/")({
   head: () => ({
@@ -64,7 +64,7 @@ function ServiciiPage() {
 
       <div className="mt-10 flex flex-wrap gap-3">
         <Btn href={`tel:${TEL}`} className="vm-callfx vm-callcta">
-          <Phone className="size-4" /> <span>Sună acum</span>
+          <Phone className="size-4" /> <span className="tabular-nums">{PHONE}</span>
         </Btn>
         <Btn href={WA} variant="ghost">
           <MessageCircle className="size-4" /> WhatsApp

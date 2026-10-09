@@ -1,5 +1,8 @@
-# Autorun site
-- [x] Replace DEMO identity with supplied Autorun logo and real contact number.
-- [x] Remove demonstration placeholders and unverified demonstration reviews.
-- [x] Verify call and WhatsApp links, page titles, logo and phone layout.
-- [x] Explain domain connection and remaining business details to confirm.
+# Roadmap
+
+- [x] Prețuri servicii → „Preț la telefon"
+- [x] Logo: variantă albă pe fundal negru, fără casetă albă
+- [x] Efect de pulsare/sclipire pe butoanele de apel (păstrat)
+- [x] WhatsApp: etichetă simplă, fără număr (păstrat)
+- [x] „Sună acum" doar în bara fixă de jos; numărul revine vizibil în restul site-ului
+- [x] Bară fixă de jos afișată dublu (Footer + MobileActionBar) — eliminat duplicatul

@@ -1,7 +1,7 @@
 import { Suspense, lazy, useEffect, useState } from "react";
 import { Clock, MapPin, Radar, Route as RouteIcon } from "lucide-react";
 
-import { TEL, mapRings, zones } from "@/lib/site-data";
+import { PHONE, TEL, mapRings, zones } from "@/lib/site-data";
 
 const CoverageMap = lazy(() => import("./CoverageMap"));
 
@@ -110,8 +110,8 @@ export function CoverageMapSection() {
             </ul>
             <p className="mt-4 text-xs text-muted-foreground">
               Nu vezi localitatea ta?{" "}
-              <a href={`tel:${TEL}`} className="font-semibold text-brand underline-offset-4 hover:underline">
-                Sună acum
+              <a href={`tel:${TEL}`} className="font-semibold text-brand tabular-nums underline-offset-4 hover:underline">
+                Sună-ne la {PHONE}
               </a>
               , deservim întreg județul Constanța.
             </p>
