@@ -22,6 +22,7 @@ export const Route = createFileRoute("/servicii/")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "/servicii" }],
   }),
   component: ServiciiPage,
 });
