@@ -42,7 +42,7 @@ export function Header() {
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-2 px-4 sm:px-5">
         <Link to="/" className="flex min-w-0 items-center gap-2">
-          <img src={logo.url} alt="Vulcanizare Autorun" width={1060} height={260} className="h-auto w-40 sm:w-52 dark:hidden" /><img src={logoDark.url} alt="Vulcanizare Autorun" width={1060} height={260} className="h-auto w-40 sm:w-52 hidden dark:block" />
+          <img src={logo.url} alt="Vulcanizare Autorun" width={1060} height={260} className="h-auto w-36 sm:w-52 dark:hidden" /><img src={logoDark.url} alt="Vulcanizare Autorun" width={1060} height={260} className="h-auto w-36 sm:w-52 hidden dark:block" />
         </Link>
 
         <nav className="hidden items-center gap-7 text-sm font-medium text-muted-foreground lg:flex">
@@ -64,9 +64,9 @@ export function Header() {
 
           <a
             href={`tel:${TEL}`}
-            className="vm-callfx vm-callcta inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-brand px-3.5 text-sm font-bold text-brand-foreground transition-all hover:brightness-110 active:scale-95 sm:px-4"
+            className="vm-callfx vm-callcta inline-flex min-h-11 items-center justify-center gap-1.5 whitespace-nowrap rounded-xl bg-brand px-3 text-[13px] font-bold text-brand-foreground transition-all hover:brightness-110 active:scale-95 sm:gap-2 sm:px-4 sm:text-sm"
           >
-            <Phone className="size-4" />
+            <Phone className="size-4 shrink-0" />
             <span>Sună acum</span>
           </a>
           <button
