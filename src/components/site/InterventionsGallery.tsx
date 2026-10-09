@@ -1,6 +1,5 @@
 import { Camera, ExternalLink } from "lucide-react";
 
-import photo01 from "@/assets/gallery/interventie-01.jpg.asset.json";
 import photo02 from "@/assets/gallery/interventie-02.jpg.asset.json";
 import photo03 from "@/assets/gallery/interventie-03.jpg.asset.json";
 import photo04 from "@/assets/gallery/interventie-04.jpg.asset.json";
@@ -14,7 +13,6 @@ import { MAPS } from "@/lib/site-data";
 import { SectionLabel } from "@/components/site/ui";
 
 const photos = [
-  { src: photo01.url, alt: "Vulcanizare mobilă Autorun Constanța" },
   { src: photo02.url, alt: "Schimb de roată efectuat la client" },
   { src: photo03.url, alt: "Intervenție Autorun la un autoturism albastru" },
   { src: photo04.url, alt: "Intervenție de vulcanizare la o dubă" },
@@ -65,8 +63,8 @@ export function InterventionsGallery() {
                 src={photo.src}
                 alt={photo.alt}
                 loading="lazy"
-                width={index === 0 ? 1254 : 1600}
-                height={index === 0 ? 706 : index === 3 || index === 4 || index === 8 ? 1200 : 2133}
+                width={1600}
+                height={index === 2 || index === 3 || index === 7 ? 1200 : 2133}
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
               />
               <span className="sr-only">Deschide fotografiile în Google Maps</span>
