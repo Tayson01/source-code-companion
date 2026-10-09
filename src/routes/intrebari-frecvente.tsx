@@ -21,7 +21,7 @@ export const Route = createFileRoute("/intrebari-frecvente")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/intrebari-frecvente" }],
+    links: [{ rel: "canonical", href: "https://vulcanizareautorun.ro/intrebari-frecvente" }],
     scripts: [
       {
         type: "application/ld+json",

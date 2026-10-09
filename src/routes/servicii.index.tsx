@@ -23,7 +23,7 @@ export const Route = createFileRoute("/servicii/")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/servicii" }],
+    links: [{ rel: "canonical", href: "https://vulcanizareautorun.ro/servicii" }],
   }),
   component: ServiciiPage,
 });
