@@ -22,13 +22,13 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Vulcanizare Autorun – Intervenții 24/7" },
+      { title: "Vulcanizare Mobilă Constanța 24/7 – Autorun | 0725 471 288" },
       {
         name: "description",
         content:
-          "Vulcanizare mobilă în Constanța și zonele limitrofe: intervenții rapide 24/7 pentru autoturisme, camioane și flote, direct la locația ta.",
+          "Vulcanizare mobilă non-stop în Constanța, Mamaia, Năvodari și pe A2/A4: intervenții rapide 24/7 pentru autoturisme, camioane și flote, direct la locația ta.",
       },
-      { property: "og:title", content: "Vulcanizare Autorun – Intervenții 24/7" },
+      { property: "og:title", content: "Vulcanizare Mobilă Constanța 24/7 – Autorun" },
       {
         property: "og:description",
         content:
@@ -37,7 +37,7 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://sa123.lovable.app/" }],
+    links: [{ rel: "canonical", href: "/" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -46,7 +46,7 @@ export const Route = createFileRoute("/")({
           "@type": "AutoRepair",
           name: "Vulcanizare Autorun",
           telephone: TEL,
-          url: "https://sa123.lovable.app/",
+          url: "/",
           address: {
             "@type": "PostalAddress",
             streetAddress: "Strada Răsăritului 7",
