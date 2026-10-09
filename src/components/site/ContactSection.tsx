@@ -48,9 +48,9 @@ export function ContactSection() {
             <div className="mt-5 grid gap-2.5 sm:grid-cols-2">
               <a
                 href={`tel:${TEL}`}
-                className="vm-callbtn inline-flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-brand-foreground px-6 text-base font-extrabold text-brand transition-transform active:scale-[0.98]"
+                className="vm-callfx vm-callbtn inline-flex min-h-14 items-center justify-center gap-2 rounded-2xl bg-brand-foreground px-6 text-base font-extrabold text-brand transition-transform active:scale-[0.98]"
               >
-                <Phone className="size-5" /> Sună acum
+                <Phone className="size-5" /> <span>Sună acum</span>
               </a>
               <a
                 href={WA}

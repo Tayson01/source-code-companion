@@ -128,9 +128,9 @@ export function ServicesSection() {
                   </Link>
                   <a
                     href={`tel:${TEL}`}
-                    className="inline-flex items-center gap-2 rounded-xl border border-border bg-card px-5 py-3 text-sm font-semibold transition-colors hover:bg-surface"
+                    className="vm-callfx vm-callcta inline-flex items-center gap-2 whitespace-nowrap rounded-xl border border-border bg-card px-5 py-3 text-sm font-bold transition-colors hover:bg-surface"
                   >
-                    <Phone className="size-4 text-brand" /> {PHONE}
+                    <Phone className="size-4 shrink-0 text-brand" /> <span className="tabular-nums">{PHONE}</span>
                   </a>
                 </div>
               </div>

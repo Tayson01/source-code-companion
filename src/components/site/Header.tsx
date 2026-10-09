@@ -41,8 +41,8 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-2 px-4 sm:px-5">
-        <Link to="/" className="flex min-w-0 items-center gap-2">
-          <img src={logo.url} alt="Vulcanizare Autorun" width={1060} height={260} className="h-auto w-40 sm:w-52 dark:hidden" /><img src={logoDark.url} alt="Vulcanizare Autorun" width={1060} height={260} className="h-auto w-40 sm:w-52 hidden dark:block" />
+        <Link to="/" className="flex shrink-0 items-center gap-2">
+          <img src={logo.url} alt="Vulcanizare Autorun" width={1060} height={260} className="h-auto w-28 shrink-0 sm:w-52 dark:hidden" /><img src={logoDark.url} alt="Vulcanizare Autorun" width={1060} height={260} className="h-auto w-28 shrink-0 sm:w-52 hidden dark:block" />
         </Link>
 
         <nav className="hidden items-center gap-7 text-sm font-medium text-muted-foreground lg:flex">
@@ -60,14 +60,14 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <ThemeToggle />
+          <ThemeToggle className="hidden sm:flex" />
 
           <a
             href={`tel:${TEL}`}
-            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-brand px-3.5 text-sm font-semibold text-brand-foreground shadow-card transition-all hover:brightness-110 active:scale-95 sm:px-4"
+            className="vm-callfx vm-callcta inline-flex min-h-11 items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-brand px-3.5 text-sm font-bold text-brand-foreground transition-all hover:brightness-110 active:scale-95 sm:px-4"
           >
-            <Phone className="size-4" />
-            <span className="hidden sm:inline">{PHONE}</span>
+            <Phone className="size-4 shrink-0" />
+                <span className="hidden tabular-nums min-[340px]:inline">{PHONE}</span>
             <span className="sr-only sm:hidden">Sună</span>
           </a>
           <button
@@ -105,9 +105,10 @@ export function Header() {
             <div className="mt-4 grid grid-cols-2 gap-2">
               <a
                 href={`tel:${TEL}`}
-                className="flex min-h-13 items-center justify-center gap-2 rounded-2xl bg-brand text-sm font-bold text-brand-foreground"
+                className="vm-callfx vm-callcta flex min-h-13 items-center justify-center gap-2 rounded-2xl bg-brand text-sm font-bold text-brand-foreground"
               >
-                <Phone className="size-4" /> {PHONE}
+                <Phone className="size-4 shrink-0" />
+                <span className="tabular-nums">{PHONE}</span>
               </a>
               <a
                 href={WA}
@@ -115,6 +116,10 @@ export function Header() {
               >
                 <MessageCircle className="size-4 text-brand" /> WhatsApp
               </a>
+            </div>
+            <div className="mt-3 flex items-center justify-between rounded-2xl border border-border bg-card px-4 py-3">
+              <span className="text-sm font-semibold text-muted-foreground">Mod întunecat</span>
+              <ThemeToggle />
             </div>
           </nav>
         </div>

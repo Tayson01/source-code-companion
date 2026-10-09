@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Phone } from "lucide-react";
+import { MessageCircle, Phone } from "lucide-react";
 
 import { Btn, BtnLink, SectionLabel } from "@/components/site/ui";
 import { ServiceIcon } from "@/components/site/ServiceIcon";
@@ -63,11 +63,11 @@ function ServiciiPage() {
       </div>
 
       <div className="mt-10 flex flex-wrap gap-3">
-        <Btn href={`tel:${TEL}`}>
-          <Phone className="size-4" /> Sună: {PHONE}
+        <Btn href={`tel:${TEL}`} className="vm-callfx vm-callcta">
+          <Phone className="size-4" /> <span className="tabular-nums">{PHONE}</span>
         </Btn>
         <Btn href={WA} variant="ghost">
-          Scrie pe WhatsApp
+          <MessageCircle className="size-4" /> WhatsApp
         </Btn>
       </div>
     </main>

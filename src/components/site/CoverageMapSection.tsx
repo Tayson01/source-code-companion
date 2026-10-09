@@ -110,7 +110,7 @@ export function CoverageMapSection() {
             </ul>
             <p className="mt-4 text-xs text-muted-foreground">
               Nu vezi localitatea ta?{" "}
-              <a href={`tel:${TEL}`} className="font-semibold text-brand">
+              <a href={`tel:${TEL}`} className="font-semibold text-brand tabular-nums underline-offset-4 hover:underline">
                 Sună-ne la {PHONE}
               </a>
               , deservim întreg județul Constanța.
