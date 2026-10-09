@@ -13,3 +13,4 @@
 - Keep the business address, Google Maps target, and coverage-map base coordinates centralized in site-data so location details stay consistent.
 - Use the supplied shared logo asset for site branding and derive browser icons from its tire symbol for small-size legibility.
 - Serve homepage van photography through asset pointers with a dedicated mobile crop in a picture element so vehicle branding stays legible without altering the source photograph.
+- Sitemap is router-derived (staticData.sitemap on every route) with service/zone pages added from site-data, so new pages are indexed automatically.
