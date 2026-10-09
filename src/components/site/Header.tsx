@@ -6,7 +6,7 @@ import logo from "@/assets/autorun-logo.png.asset.json";
 import logoDark from "@/assets/autorun-logo-dark.png.asset.json";
 
 import { ThemeToggle } from "@/components/site/ThemeToggle";
-import { PHONE, TEL, WA } from "@/lib/site-data";
+import { TEL, WA } from "@/lib/site-data";
 
 const nav = [
   { to: "/", label: "Acasă" },
@@ -64,11 +64,10 @@ export function Header() {
 
           <a
             href={`tel:${TEL}`}
-            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-brand px-3.5 text-sm font-semibold text-brand-foreground shadow-card transition-all hover:brightness-110 active:scale-95 sm:px-4"
+            className="vm-callfx vm-callcta inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-brand px-3.5 text-sm font-bold text-brand-foreground transition-all hover:brightness-110 active:scale-95 sm:px-4"
           >
             <Phone className="size-4" />
-            <span className="hidden sm:inline">{PHONE}</span>
-            <span className="sr-only sm:hidden">Sună</span>
+            <span>Sună acum</span>
           </a>
           <button
             onClick={() => setOpen((v) => !v)}
@@ -105,9 +104,10 @@ export function Header() {
             <div className="mt-4 grid grid-cols-2 gap-2">
               <a
                 href={`tel:${TEL}`}
-                className="flex min-h-13 items-center justify-center gap-2 rounded-2xl bg-brand text-sm font-bold text-brand-foreground"
+                className="vm-callfx vm-callcta flex min-h-13 items-center justify-center gap-2 rounded-2xl bg-brand text-sm font-bold text-brand-foreground"
               >
-                <Phone className="size-4" /> {PHONE}
+                <Phone className="size-4" />
+                <span>Sună acum</span>
               </a>
               <a
                 href={WA}

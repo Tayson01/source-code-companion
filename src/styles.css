@@ -430,6 +430,86 @@
   }
 }
 
+/* ===== Buton „Sună acum”: efect de apel ===== */
+.vm-callfx {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+.vm-callfx::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgb(255 255 255 / 0.42) 50%,
+    transparent 60%
+  );
+  transform: translateX(-130%);
+  animation: vm-call-shine 3.4s ease-in-out infinite;
+}
+@keyframes vm-call-shine {
+  0%,
+  58% {
+    transform: translateX(-130%);
+  }
+  92%,
+  100% {
+    transform: translateX(130%);
+  }
+}
+.vm-callfx > * {
+  position: relative;
+  z-index: 2;
+}
+.vm-callfx svg {
+  animation: vm-call-wiggle 2.6s ease-in-out infinite;
+}
+@keyframes vm-call-wiggle {
+  0%,
+  70%,
+  100% {
+    transform: rotate(0deg);
+  }
+  74% {
+    transform: rotate(-16deg);
+  }
+  78% {
+    transform: rotate(13deg);
+  }
+  82% {
+    transform: rotate(-9deg);
+  }
+  86% {
+    transform: rotate(6deg);
+  }
+  90% {
+    transform: rotate(-3deg);
+  }
+}
+.vm-callcta {
+  animation: vm-call-pulse 2.6s ease-in-out infinite;
+}
+@keyframes vm-call-pulse {
+  0%,
+  100% {
+    box-shadow: 0 6px 18px color-mix(in oklab, var(--color-brand) 32%, transparent);
+  }
+  50% {
+    box-shadow: 0 12px 34px color-mix(in oklab, var(--color-brand) 62%, transparent);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .vm-callfx::before,
+  .vm-callfx svg,
+  .vm-callcta {
+    animation: none;
+  }
+}
+
 /* ===== Hartă next-level (mobile-first) ===== */
 .vm-fab {
   display: inline-flex;
