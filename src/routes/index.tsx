@@ -19,6 +19,7 @@ import { BASE, PHONE, TEL, WA, zones } from "@/lib/site-data";
 
 
 export const Route = createFileRoute("/")({
+  staticData: { sitemap: true },
   component: Index,
   head: () => ({
     meta: [

@@ -6,6 +6,7 @@ import { ServiceIcon } from "@/components/site/ServiceIcon";
 import { PHONE, TEL, WA, services, zones } from "@/lib/site-data";
 
 export const Route = createFileRoute("/servicii/$slug")({
+  staticData: { sitemap: true },
   loader: ({ params }) => {
     const service = services.find((s) => s.slug === params.slug);
     if (!service) throw notFound();

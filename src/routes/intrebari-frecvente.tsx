@@ -4,6 +4,7 @@ import { FAQSection } from "@/components/site/FAQSection";
 import { faqs } from "@/lib/site-data";
 
 export const Route = createFileRoute("/intrebari-frecvente")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title: "Întrebări frecvente — Vulcanizare Autorun" },

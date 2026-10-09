@@ -6,6 +6,7 @@ import { ContactForm } from "@/components/site/ContactForm";
 import { ADDRESS, MAPS, PHONE, TEL, WA } from "@/lib/site-data";
 
 export const Route = createFileRoute("/contact")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title: "Contact — Vulcanizare Autorun, non-stop" },

@@ -6,6 +6,7 @@ import { ContactForm } from "@/components/site/ContactForm";
 import { PHONE, TEL, WA, services, zones } from "@/lib/site-data";
 
 export const Route = createFileRoute("/zone/$slug")({
+  staticData: { sitemap: true },
   loader: ({ params }) => {
     const zone = zones.find((z) => z.slug === params.slug);
     if (!zone) throw notFound();
