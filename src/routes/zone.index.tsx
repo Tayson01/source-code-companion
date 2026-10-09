@@ -35,7 +35,7 @@ function ZonePage() {
           Acoperim Constanța și împrejurimile.
         </h1>
         <p className="mt-4 max-w-2xl text-muted-foreground">
-          Selectează zona ta pentru detalii despre trasee, timp de sosire și prețuri orientative.
+          Selectează zona ta pentru detalii despre trasee, timp de sosire și tarife. Prețul îl primești la telefon.
         </p>
 
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

@@ -73,8 +73,8 @@ export const services: Service[] = [
     desc: "Pene, tăieturi sau valve defecte — reparate la fața locului, fără platformă.",
     intro:
       "Reparăm pana direct acolo unde ești: plombă internă, ciuperci de vulcanizare, schimb de valvă sau resigilare jantă. Anvelopa rămâne sigură pentru rulaj normal, cu garanție pentru lucrare.",
-    price: "de la 80 lei",
-    priceFrom: "80 lei",
+    price: "Preț la telefon",
+    priceFrom: "Preț la telefon",
     priceNote: "reparație simplă pe loc",
     duration: "15–30 minute",
     bullets: [
@@ -97,8 +97,8 @@ export const services: Service[] = [
     desc: "Montaj vară/iarnă direct acasă sau la birou, fără timpi de așteptare.",
     intro:
       "Venim cu utilajul mobil de montat și echilibrat direct în curtea ta sau în parcarea de la birou. Schimbăm setul sezonier în aproximativ o oră, fără să pierzi timpul la coadă în service.",
-    price: "de la 150 lei / set de 4",
-    priceFrom: "150 lei",
+    price: "Preț la telefon",
+    priceFrom: "Preț la telefon",
     priceNote: "set de 4 anvelope",
     duration: "45–75 minute pentru un set complet",
     bullets: [
@@ -121,8 +121,8 @@ export const services: Service[] = [
     desc: "Echilibrare electronică precisă pentru rulare lină și uzură uniformă.",
     intro:
       "Vibrațiile în volan la 90–120 km/h vin aproape mereu de la roți neechilibrate. Facem echilibrare electronică cu aparatură mobilă, direct la tine, cu contragreutăți adezive sau cu clemă.",
-    price: "de la 40 lei / roată",
-    priceFrom: "40 lei",
+    price: "Preț la telefon",
+    priceFrom: "Preț la telefon",
     priceNote: "per roată",
     duration: "10 minute pe roată",
     bullets: [
@@ -145,8 +145,8 @@ export const services: Service[] = [
     desc: "Intervenții pentru TIR-uri și autoutilitare, contracte pentru flote.",
     intro:
       "Avem echipament special pentru camioane, autotrenuri și autoutilitare: pistoale de impact de mare cuplu, cricuri de tonaj și anvelope de intervenție. Lucrăm cu transportatori și flote pe bază de contract.",
-    price: "ofertă personalizată",
-    priceFrom: "ofertă",
+    price: "Preț la telefon",
+    priceFrom: "Preț la telefon",
     priceNote: "contracte flote",
     duration: "30–60 minute pe roată",
     bullets: [
@@ -169,8 +169,8 @@ export const services: Service[] = [
     desc: "Tractare și transport pentru autoturisme în Constanța și împrejurimi.",
     intro:
       "Când anvelopa nu mai poate fi reparată sau mașina nu poate rula, organizăm tractarea către service-ul sau adresa dorită, în Constanța și în județ.",
-    price: "de la 200 lei",
-    priceFrom: "200 lei",
+    price: "Preț la telefon",
+    priceFrom: "Preț la telefon",
     priceNote: "în funcție de distanță",
     duration: "în funcție de distanță",
     bullets: [
@@ -332,7 +332,7 @@ export const reviews = [
 export const faqs = [
   {
     q: "Cât costă o intervenție de vulcanizare mobilă în Constanța?",
-    a: "Prețul pornește de la 80 lei pentru o reparație simplă pe loc (pană cu cui) și ajunge la 150–250 lei pentru schimb roată + echilibrare la domiciliu. Pe A2/A4 tariful include și deplasarea. Sunați pentru o estimare exactă în 30 de secunde.",
+    a: "Tariful depinde de tipul intervenției și de distanță și îl primești la telefon înainte de plecare, fără surprize. Sunați pentru o estimare exactă în 30 de secunde.",
     category: "prețuri",
   },
   {
