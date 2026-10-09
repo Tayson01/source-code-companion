@@ -6,6 +6,7 @@ import { ContactForm } from "@/components/site/ContactForm";
 import { PHONE, TEL, WA, services, zones } from "@/lib/site-data";
 
 export const Route = createFileRoute("/zone/$slug")({
+  staticData: { sitemap: true },
   loader: ({ params }) => {
     const zone = zones.find((z) => z.slug === params.slug);
     if (!zone) throw notFound();
@@ -28,7 +29,7 @@ export const Route = createFileRoute("/zone/$slug")({
         { property: "og:type", content: "article" },
         { name: "twitter:card", content: "summary_large_image" },
       ],
-      links: [{ rel: "canonical", href: `/zone/${z?.slug ?? ""}` }],
+      links: [{ rel: "canonical", href: `https://vulcanizareautorun.ro/zone/${z?.slug ?? ""}` }],
     };
   },
   component: ZonePage,

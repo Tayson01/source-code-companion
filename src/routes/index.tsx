@@ -19,6 +19,7 @@ import { BASE, PHONE, TEL, WA, zones } from "@/lib/site-data";
 
 
 export const Route = createFileRoute("/")({
+  staticData: { sitemap: true },
   component: Index,
   head: () => ({
     meta: [
@@ -37,7 +38,7 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://vulcanizareautorun.ro/" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -46,7 +47,7 @@ export const Route = createFileRoute("/")({
           "@type": "AutoRepair",
           name: "Vulcanizare Autorun",
           telephone: TEL,
-          url: "/",
+          url: "https://vulcanizareautorun.ro/",
           address: {
             "@type": "PostalAddress",
             streetAddress: "Strada Răsăritului 7",

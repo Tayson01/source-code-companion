@@ -6,6 +6,7 @@ import { CoverageMapSection } from "@/components/site/CoverageMapSection";
 import { zones } from "@/lib/site-data";
 
 export const Route = createFileRoute("/zone/")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title: "Zone deservite — Vulcanizare Autorun și litoral" },
@@ -22,7 +23,7 @@ export const Route = createFileRoute("/zone/")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/zone" }],
+    links: [{ rel: "canonical", href: "https://vulcanizareautorun.ro/zone" }],
   }),
   component: ZonePage,
 });

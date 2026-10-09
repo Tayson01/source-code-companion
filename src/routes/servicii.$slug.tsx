@@ -6,6 +6,7 @@ import { ServiceIcon } from "@/components/site/ServiceIcon";
 import { PHONE, TEL, WA, services, zones } from "@/lib/site-data";
 
 export const Route = createFileRoute("/servicii/$slug")({
+  staticData: { sitemap: true },
   loader: ({ params }) => {
     const service = services.find((s) => s.slug === params.slug);
     if (!service) throw notFound();
@@ -26,7 +27,7 @@ export const Route = createFileRoute("/servicii/$slug")({
         { property: "og:type", content: "article" },
         { name: "twitter:card", content: "summary_large_image" },
       ],
-      links: [{ rel: "canonical", href: `/servicii/${s?.slug ?? ""}` }],
+      links: [{ rel: "canonical", href: `https://vulcanizareautorun.ro/servicii/${s?.slug ?? ""}` }],
     };
   },
   component: ServicePage,

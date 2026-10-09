@@ -6,6 +6,7 @@ import { ServiceIcon } from "@/components/site/ServiceIcon";
 import { PHONE, TEL, WA, services } from "@/lib/site-data";
 
 export const Route = createFileRoute("/servicii/")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title: "Servicii — Vulcanizare Autorun — listă completă" },
@@ -22,7 +23,7 @@ export const Route = createFileRoute("/servicii/")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/servicii" }],
+    links: [{ rel: "canonical", href: "https://vulcanizareautorun.ro/servicii" }],
   }),
   component: ServiciiPage,
 });

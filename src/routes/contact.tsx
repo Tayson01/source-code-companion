@@ -6,6 +6,7 @@ import { ContactForm } from "@/components/site/ContactForm";
 import { ADDRESS, MAPS, PHONE, TEL, WA } from "@/lib/site-data";
 
 export const Route = createFileRoute("/contact")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title: "Contact — Vulcanizare Autorun, non-stop" },
@@ -22,7 +23,7 @@ export const Route = createFileRoute("/contact")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [{ rel: "canonical", href: "https://vulcanizareautorun.ro/contact" }],
   }),
   component: ContactPage,
 });
